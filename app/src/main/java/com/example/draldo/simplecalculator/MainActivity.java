@@ -36,26 +36,46 @@ public class MainActivity extends AppCompatActivity {
 
     public void type1(View view) {
         Log.d(TAG, "type1: ");
-        mEditText.append(mButton1.getText());
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + 1);
     }
 
     public void type2(View view) {
         Log.d(TAG, "type2: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + 2);
     }
 
     public void type3(View view) {
         Log.d(TAG, "type3: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + 3);
     }
 
     public void sum(View view) {
         Log.d(TAG, "sum: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + "+");
     }
 
     public void min(View view) {
         Log.d(TAG, "min: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + "-");
     }
 
     public void result(View view) {
         Log.d(TAG, "res: ");
+        String tmp = mEditText.getText().toString();
+        int result;
+        if(tmp.contains("-")){
+            String[] numbers = tmp.split("-");
+            result = Integer.parseInt(numbers[0]) - Integer.parseInt(numbers[1]);
+        }
+        else {
+            String[] numbers = tmp.split("\\+");
+            result = Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+        }
+        mEditText.setText(String.valueOf(result));
     }
 }
