@@ -10,8 +10,51 @@
     android:orientation="vertical"
     tools:context="com.example.draldo.simplecalculator.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/a_main_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/a_main_n1"
+        android:onClick="type1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/a_main_n2"
+        android:onClick="type2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/a_main_n3"
+        android:onClick="type3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3"/>
+
+    <Button
+        android:id="@+id/a_add_btn"
+        android:onClick="sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/a_sub_btn"
+        android:onClick="min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/a_res_btn"
+        android:onClick="result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="/>
+
 </LinearLayout>
