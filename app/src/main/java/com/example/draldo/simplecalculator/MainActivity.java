@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mButton1;
     private Button mButton2;
     private Button mButton3;
+    private Button mButton4;
+    private Button mButton5;
+    private Button mButton6;
     private Button mButtonAdd;
     private Button mButtonSub;
     private Button mButtonRes;
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         mButton1 = (Button) findViewById(R.id.a_main_n1);
         mButton2 = (Button) findViewById(R.id.a_main_n2);
         mButton3 = (Button) findViewById(R.id.a_main_n3);
+        mButton4 = (Button) findViewById(R.id.a_main_n4);
+        mButton5 = (Button) findViewById(R.id.a_main_n5);
+        mButton6 = (Button) findViewById(R.id.a_main_n6);
 
         mButtonAdd = (Button) findViewById(R.id.a_add_btn);
         mButtonSub = (Button) findViewById(R.id.a_sub_btn);
@@ -50,6 +56,24 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "type3: ");
         String tmp = mEditText.getText().toString();
         mEditText.setText(tmp + 3);
+    }
+
+    public void type4(View view) {
+        Log.d(TAG, "type4: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + 4);
+    }
+
+    public void type5(View view) {
+        Log.d(TAG, "type5: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + 5);
+    }
+
+    public void type6(View view) {
+        Log.d(TAG, "type6: ");
+        String tmp = mEditText.getText().toString();
+        mEditText.setText(tmp + 6);
     }
 
     public void sum(View view) {
